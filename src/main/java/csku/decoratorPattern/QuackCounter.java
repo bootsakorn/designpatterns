@@ -13,9 +13,7 @@ public class QuackCounter implements Quackable {
     @Override
     public void quack() {
         duck.quack();
-        if (!duck.getClass().getName().equals("Pigeon") &&  duck.getClass().getName().equals("Goose")){
-            numberOfQuacks++;
-        }
+        numberOfQuacks++;
     }
 
     public static int getQuacks() {
